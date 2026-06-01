@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Bottle Advertisement - Interactive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading-screen">
+            <div class="loader"></div>
+            <p>Loading Premium Experience...</p>
+        </div>
+
+        <!-- Main Scene -->
+        <div id="mainScene" class="main-scene hidden">
+            <!-- 3D Canvas -->
+            <canvas id="bottleCanvas"></canvas>
+
+            <!-- Interactive UI -->
+            <div class="ui-overlay">
+                <div class="brand-header">
+                    <h1>Luxe Essence</h1>
+                    <p>Premium Fragrance Collection</p>
+                </div>
+
+                <div class="instruction-text">
+                    <span class="click-hint">✨ Click the bottle cap to open ✨</span>
+                </div>
+
+                <div class="bottle-info">
+                    <div class="info-card">
+                        <h3>Elegance Redefined</h3>
+                        <p>Discover the perfect blend of sophistication and style</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section (appears after opening) -->
+        <div id="contentSection" class="content-section hidden">
+            <div class="content-wrapper">
+                <button class="close-btn" id="closeBtn">← Back to Bottle</button>
+                
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h2>Welcome to Luxe Essence</h2>
+                        <p>Experience the epitome of luxury fragrance. Our premium collection combines the finest ingredients from around the world to create unforgettable scents.</p>
+                    </div>
+
+                    <div class="content-item">
+                        <h3>🌟 Features</h3>
+                        <ul>
+                            <li>Premium Natural Ingredients</li>
+                            <li>Handcrafted by Master Perfumers</li>
+                            <li>Sustainable & Eco-Friendly Packaging</li>
+                            <li>Long-Lasting Fragrance (12+ hours)</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3>✨ Our Collection</h3>
+                        <ul>
+                            <li><strong>Midnight Elegance</strong> - Dark, mysterious notes</li>
+                            <li><strong>Golden Hour</strong> - Warm, inviting aroma</li>
+                            <li><strong>Ocean Breeze</strong> - Fresh, crisp scent</li>
+                            <li><strong>Rose Garden</strong> - Floral, romantic essence</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item cta-section">
+                        <h3>Ready to Experience Luxury?</h3>
+                        <button class="cta-btn">Shop Now</button>
+                        <button class="cta-btn secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
